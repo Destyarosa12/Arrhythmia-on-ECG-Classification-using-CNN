@@ -75,7 +75,7 @@ The model achieved an accuracy of 76.78% on the test set. Below are key observat
 
 - Training loss decreased consistently, but validation loss showed instability.
 
-## Confusion Matrix Analysis
+### Confusion Matrix Analysis
 
 - The model performed well for normal beats but struggled to differentiate between abnormal classes.
 
