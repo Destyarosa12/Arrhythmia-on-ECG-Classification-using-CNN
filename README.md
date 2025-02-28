@@ -1,13 +1,13 @@
 # Arrhythmia-on-ECG-Classification-using-CNN
-Overview
+##Overview
 
 This project implements an Electrocardiogram (ECG) signal classification model using a 1D Convolutional Neural Network (CNN). The goal is to classify ECG signals into five categories based on the MIT-BIH Arrhythmia Dataset.
 
-Dataset
+##Dataset
 
 The dataset used for training and testing is the MIT-BIH Arrhythmia Database, obtained from PhysioNet. It contains labeled ECG signals categorized into different types of heartbeats.
 
-Preprocessing
+##Preprocessing
 
 Before training the model, the raw ECG signals undergo the following preprocessing steps:
 
@@ -21,7 +21,7 @@ Label Encoding: Converting categorical labels into numerical values.
 
 One-Hot Encoding: Transforming labels into a one-hot representation for classification.
 
-Model Architecture
+##Model Architecture
 
 The model is built using Keras and TensorFlow and consists of the following layers:
 
@@ -39,7 +39,7 @@ Fully Connected Layers: Two dense layers with ReLU activation.
 
 Output Layer: A softmax layer with five output classes.
 
-Training
+##Training
 
 The model is trained using:
 
@@ -53,7 +53,7 @@ Epochs: 40 (with early stopping)
 
 Validation Split: 20% of the dataset
 
-Results
+##Results
 
 The model achieved an accuracy of 76.78% on the test set. Below are key observations:
 
@@ -67,7 +67,7 @@ Normal and Q classes were classified well.
 
 Some misclassifications occurred between S, V, and F classes.
 
-Performance Evaluation
+##Performance Evaluation
 
 Accuracy & Loss Curves
 
@@ -75,7 +75,7 @@ The training accuracy increased over epochs, while validation accuracy fluctuate
 
 Training loss decreased consistently, but validation loss showed instability.
 
-Confusion Matrix Analysis
+##Confusion Matrix Analysis
 
 The model performed well for normal beats but struggled to differentiate between abnormal classes.
 
